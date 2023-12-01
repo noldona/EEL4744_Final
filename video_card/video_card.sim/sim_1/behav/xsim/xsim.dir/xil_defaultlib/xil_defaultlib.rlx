@@ -1,0 +1,14 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+C:/Users/dyrge/Documents/EEL4744/video_card/video_card.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1701314749,verilog,,,,clk_wiz_0,,,../../../../video_card.ip_user_files/ipstatic,,,,,
+C:/Users/dyrge/Documents/EEL4744/video_card/video_card.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1701314749,verilog,,C:/Users/dyrge/Documents/EEL4744/video_card/video_card.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../video_card.ip_user_files/ipstatic,,,,,
+C:/Users/dyrge/Documents/EEL4744/video_card/video_card.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+C:/Users/dyrge/Documents/EEL4744/video_card/video_card.srcs/sim_1/new/video_card_tb.vhd,1701379048,vhdl2008,,,,video_card_tb,,,,,,,,
+C:/Users/dyrge/Documents/EEL4744/video_card/video_card.srcs/sources_1/imports/new/vga_types.vhd,1698271561,vhdl2008,C:/Users/dyrge/Documents/EEL4744/video_card/video_card.srcs/sim_1/new/video_card_tb.vhd;C:/Users/dyrge/Documents/EEL4744/video_card/video_card.srcs/sources_1/new/sync_counter.vhd;C:/Users/dyrge/Documents/EEL4744/video_card/video_card.srcs/sources_1/new/video_card.vhd,,,vga_types,,,,,,,,
+C:/Users/dyrge/Documents/EEL4744/video_card/video_card.srcs/sources_1/new/console_utils.vhd,1701360165,vhdl2008,C:/Users/dyrge/Documents/EEL4744/video_card/video_card.srcs/sim_1/new/video_card_tb.vhd;C:/Users/dyrge/Documents/EEL4744/video_card/video_card.srcs/sources_1/new/ram.vhd;C:/Users/dyrge/Documents/EEL4744/video_card/video_card.srcs/sources_1/new/sync_counter.vhd;C:/Users/dyrge/Documents/EEL4744/video_card/video_card.srcs/sources_1/new/test_utils.vhd;C:/Users/dyrge/Documents/EEL4744/video_card/video_card.srcs/sources_1/new/video_card.vhd,,,console_utils,,,,,,,,
+C:/Users/dyrge/Documents/EEL4744/video_card/video_card.srcs/sources_1/new/ram.vhd,1701312103,vhdl2008,,,,ram,,,,,,,,
+C:/Users/dyrge/Documents/EEL4744/video_card/video_card.srcs/sources_1/new/sync_counter.vhd,1701312172,vhdl2008,,,,sync_counter,,,,,,,,
+C:/Users/dyrge/Documents/EEL4744/video_card/video_card.srcs/sources_1/new/test_utils.vhd,1701349788,vhdl2008,C:/Users/dyrge/Documents/EEL4744/video_card/video_card.srcs/sim_1/new/video_card_tb.vhd,,,test_utils,,,,,,,,
+C:/Users/dyrge/Documents/EEL4744/video_card/video_card.srcs/sources_1/new/video_card.vhd,1701382152,vhdl2008,,,,video_card,,,,,,,,

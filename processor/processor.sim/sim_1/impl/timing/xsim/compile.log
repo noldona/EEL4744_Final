@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dyrge/Documents/EEL4744/processor/processor.sim/sim_1/impl/timing/xsim/computer_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module computer
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-311] analyzing module rom_128x8_sync
+INFO: [VRFC 10-311] analyzing module rw_96x8_sync
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dyrge/Documents/EEL4744/processor/processor.srcs/sim_1/new/computer_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'computer_tb'

@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl2008 xil_defaultlib  \
+"../../../../video_card.srcs/sources_1/imports/new/vga_types.vhd" \
+"../../../../video_card.srcs/sources_1/new/console_utils.vhd" \
+"../../../../video_card.srcs/sources_1/new/video_card.vhd" \
+"../../../../video_card.srcs/sources_1/new/sync_counter.vhd" \
+"../../../../video_card.srcs/sources_1/new/ram.vhd" \
+"../../../../video_card.srcs/sources_1/new/test_utils.vhd" \
+"../../../../video_card.srcs/sim_1/new/video_card_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               2M
+Start Address      0x00000000
+End Address        0x001FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0003D047    Oct 25 20:27:26 2023    C:/Users/dyrge/Documents/EEL4744/video_card/video_card.runs/impl_1/video_card.bit

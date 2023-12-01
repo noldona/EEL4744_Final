@@ -1,0 +1,184 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Fri Dec  1 17:04:43 2023
+| Host         : LAPTOP-JRMFS4PA running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file computer_control_sets_placed.rpt
+| Design       : computer
+| Device       : xc7s25
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   106 |
+|    Minimum number of control sets                        |   106 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    22 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   106 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |   101 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | Yes                    |              37 |           10 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               8 |            5 |
+| Yes          | No                    | Yes                    |             813 |          248 |
+| Yes          | Yes                   | No                     |               6 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+--------------------------------------------------+-------------------------+------------------+----------------+--------------+
+|   Clock Signal   |                   Enable Signal                  |     Set/Reset Signal    | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------+--------------------------------------------------+-------------------------+------------------+----------------+--------------+
+|  clock_IBUF_BUFG | CPU_1/DP_1/port_out_000                          | rst_btn_IBUF            |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG |                                                  |                         |                2 |              2 |         1.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/data_out11_in                         | CPU_1/DP_1/MAR_reg[6]_5 |                3 |              6 |         2.00 |
+|  clock_IBUF_BUFG | CPU_1/CU_1/FSM_onehot_current_state_reg[35]_0[0] | rst_btn_IBUF            |                4 |              8 |         2.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[1]_rep_0[0]                   | rst_btn_IBUF            |                5 |              8 |         1.60 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[0]_rep_8[0]                   | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[1]_rep_2[0]                   | rst_btn_IBUF            |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[1]_rep_5[0]                   | rst_btn_IBUF            |                5 |              8 |         1.60 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[0]_rep_0[0]                   | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[0]_rep_5[0]                   | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[1]_rep__0_3[0]                | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[1]_rep__0_4[0]                | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[0]_rep__0_0[0]                | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[1]_rep__0_5[0]                | rst_btn_IBUF            |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[0]_rep_7[0]                   | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[0]_rep__0_2[0]                | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[1]_rep__0_6[0]                | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[1]_rep__0_7[0]                | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_0[0]                       | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/E[0]                                  |                         |                5 |              8 |         1.60 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[0]_rep_2[0]                   | rst_btn_IBUF            |                6 |              8 |         1.33 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[0]_rep_3[0]                   | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[0]_rep_6[0]                   | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[0]_rep__0_3[0]                | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[0]_rep__0_4[0]                | rst_btn_IBUF            |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[0]_rep_4[0]                   | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[0]_rep__0_5[0]                | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[1]_rep_3[0]                   | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[1]_rep_4[0]                   | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[1]_rep__0_0[0]                | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[1]_rep__0_2[0]                | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_11[0]                      | rst_btn_IBUF            |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[3]_3[0]                       | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_12[0]                      | rst_btn_IBUF            |                4 |              8 |         2.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_17[0]                      | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[3]_7[0]                       | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[6]_3[0]                       | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[4]_11[0]                      | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_15[0]                      | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[4]_7[0]                       | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[4]_2[0]                       | rst_btn_IBUF            |                5 |              8 |         1.60 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_10[0]                      | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_1[0]                       | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_22[0]                      | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_13[0]                      | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_16[0]                      | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_7[0]                       | rst_btn_IBUF            |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[6]_0[0]                       | rst_btn_IBUF            |                5 |              8 |         1.60 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[6]_2[0]                       | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[3]_4[0]                       | rst_btn_IBUF            |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_14[0]                      | rst_btn_IBUF            |                6 |              8 |         1.33 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_11[0]                      | rst_btn_IBUF            |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_13[0]                      | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[4]_8[0]                       | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_20[0]                      | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[3]_2[0]                       | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[4]_0[0]                       | rst_btn_IBUF            |                4 |              8 |         2.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[4]_4[0]                       | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[4]_3[0]                       | rst_btn_IBUF            |                4 |              8 |         2.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_18[0]                      | rst_btn_IBUF            |                6 |              8 |         1.33 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_21[0]                      | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[3]_1[0]                       | rst_btn_IBUF            |                5 |              8 |         1.60 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[4]_10[0]                      | rst_btn_IBUF            |                7 |              8 |         1.14 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[3]_5[0]                       | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_19[0]                      | rst_btn_IBUF            |                4 |              8 |         2.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[4]_9[0]                       | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[5]_1[0]                       | rst_btn_IBUF            |                6 |              8 |         1.33 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[4]_6[0]                       | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_1[0]                       | rst_btn_IBUF            |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_9[0]                       | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_3[0]                       | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[6]_4[0]                       | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[5]_0[0]                       | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_12[0]                      | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[3]_0[0]                       | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[3]_6[0]                       | rst_btn_IBUF            |                4 |              8 |         2.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[4]_1[0]                       | rst_btn_IBUF            |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_15[0]                      | rst_btn_IBUF            |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_5[0]                       | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_14[0]                      | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_10[0]                      | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[6]_1[0]                       | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[4]_5[0]                       | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_4[0]                       | rst_btn_IBUF            |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_6[0]                       | rst_btn_IBUF            |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_2[0]                       | rst_btn_IBUF            |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[2]_8[0]                       | rst_btn_IBUF            |                5 |              8 |         1.60 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_5[0]                       | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_6[0]                       | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_16[0]                      | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_3[0]                       | rst_btn_IBUF            |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_19[0]                      | rst_btn_IBUF            |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_20[0]                      | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_21[0]                      | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_18[0]                      | rst_btn_IBUF            |                4 |              8 |         2.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_9[0]                       | rst_btn_IBUF            |                5 |              8 |         1.60 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_4[0]                       | rst_btn_IBUF            |                6 |              8 |         1.33 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_8[0]                       | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_7[0]                       | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_17[0]                      | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/DP_1/MAR_reg[7]_2[0]                       | rst_btn_IBUF            |                1 |              8 |         8.00 |
+|  clock_IBUF_BUFG | CPU_1/CU_1/Q[0]                                  | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/CU_1/E[0]                                  | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/CU_1/FSM_onehot_current_state_reg[11]_0[0] | rst_btn_IBUF            |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | CPU_1/CU_1/MAR_Load                              | rst_btn_IBUF            |                4 |             12 |         3.00 |
+|  clock_IBUF_BUFG |                                                  | rst_btn_IBUF            |               10 |             37 |         3.70 |
++------------------+--------------------------------------------------+-------------------------+------------------+----------------+--------------+
+
+
